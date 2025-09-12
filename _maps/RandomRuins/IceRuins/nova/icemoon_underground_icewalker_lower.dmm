@@ -173,6 +173,10 @@
 	},
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
+"cB" = (
+/obj/structure/flora/ash/stem_shroom,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/ruin/unpowered/primitive_catgirl_den)
 "cW" = (
 /obj/structure/spacevine{
 	name = "thick vines";
@@ -517,6 +521,13 @@
 /obj/structure/mineral_door/wood/large_gate{
 	dir = 1
 	},
+/turf/open/misc/dirt/icemoon,
+/area/ruin/unpowered/primitive_catgirl_den)
+"lT" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/obj/structure/flora/ash/stem_shroom,
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
 "lZ" = (
@@ -1146,6 +1157,10 @@
 "yR" = (
 /obj/structure/curtain/bounty,
 /turf/open/floor/wood/icemoon,
+/area/ruin/unpowered/primitive_catgirl_den)
+"yV" = (
+/obj/structure/flora/ash/stem_shroom,
+/turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
 "zh" = (
 /obj/structure/wall_torch/spawns_lit/directional/north,
@@ -2622,7 +2637,7 @@ yp
 Nt
 bH
 gU
-wF
+cB
 Yk
 wF
 aK
@@ -3273,7 +3288,7 @@ MX
 nn
 oW
 yp
-tI
+yV
 tI
 tI
 GL
@@ -3628,7 +3643,7 @@ wF
 wF
 Yk
 ut
-Uk
+lT
 oK
 eS
 JQ
