@@ -1,6 +1,6 @@
 /mob/living/basic/trooper/cin_soldier
 	name = "Coalition Operative"
-	desc = "Death to SolFed."
+	desc = "Death to SolGov."
 	melee_damage_lower = 15
 	melee_damage_upper = 20
 	ai_controller = /datum/ai_controller/basic_controller/trooper/calls_reinforcements/ancient_milsim
@@ -53,23 +53,13 @@
 	r_hand = /obj/item/gun/ballistic/automatic/miecz
 	loot = list(/obj/effect/spawner/random/ancient_milsim/ranged)
 	/// Type of bullet we use
-	var/casingtype = /obj/item/ammo_casing/c27_54cesarzowa/ancient // We buffed this round, so these guys got unintentionally buffed too.
+	var/casingtype = /obj/item/ammo_casing/c27_54cesarzowa
 	/// Sound to play when firing weapon
 	var/projectilesound = 'modular_nova/modules/modular_weapons/sounds/smg_light.ogg'
 	/// number of burst shots
 	var/burst_shots = 2
 	/// Time between taking shots
 	var/ranged_cooldown = 0.45 SECONDS
-
-/obj/item/ammo_casing/c27_54cesarzowa/ancient
-	projectile_type = /obj/projectile/bullet/c27_54cesarzowa/ancient
-
-/obj/projectile/bullet/c27_54cesarzowa/ancient
-	name = ".27-54 Cesarzowa piercing bullet casing"
-	damage = 18 // original was 15 but we ran this the longest and it worked fine
-	armour_penetration = 30
-	wound_bonus = -30
-	exposed_wound_bonus = -10
 
 /mob/living/basic/trooper/cin_soldier/ranged/Initialize(mapload)
 	. = ..()
